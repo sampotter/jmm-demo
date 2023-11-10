@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwlv2n7dhgrvx"]
+
+[ext_resource type="ArrayMesh" uid="uid://kp4c6ja5g2jc" path="res://room.obj" id="1_7fosi"]
+
+[node name="Room" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.175396, 0.29659, -0.162309)
+mesh = ExtResource("1_7fosi")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 5)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3.5, 0)
+omni_range = 30.0
